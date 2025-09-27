@@ -38,3 +38,19 @@ export const etkinlikListesi: Etkinlik[] = [
   // kategori: sadece belirtilen değerlerden birini kullanın
   // durum: sadece belirtilen değerlerden birini kullanın
 ];
+
+export const etkinlikListesi: Etkinlik[] = [
+  {
+    id: 1, // benzersiz numara
+    baslik: "Etkinlik Adı",
+    aciklama: "Etkinlik açıklaması...",
+    tarih: "2024-03-15", // YYYY-MM-DD formatı
+    saat: "14:00",
+    konum: "Etkinlik yeri",
+    kategori: "workshop", // workshop, yarışma, seminer, gezi, toplanti
+    katilimciSayisi: 0,
+    maxKatilimci: 30,
+    durum: "yaklaşan" // yaklaşan, devam-ediyor, tamamlandi
+  },
+  // Diğer etkinlikler...
+];
