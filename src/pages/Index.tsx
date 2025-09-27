@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navigasyon } from "@/components/Navigasyon";
+import { HeroSection } from "@/components/HeroSection";
+import { HakkimizdaBolumu } from "@/components/HakkimizdaBolumu";
+import { EtkinlikTakvimi } from "@/components/EtkinlikTakvimi";
+import { Footer } from "@/components/Footer";
 
+// Ana sayfa bileşeni - Kulüp web sitesinin ana sayfası
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Üst Navigasyon Menüsü */}
+      <Navigasyon className="fixed top-0 left-0 right-0 z-50" />
+      
+      {/* Ana İçerik Alanları */}
+      <main className="pt-16">
+        {/* Hero Bölümü - Ana Tanıtım */}
+        <HeroSection />
+        
+        {/* Hakkımızda Bölümü */}
+        <HakkimizdaBolumu />
+        
+        {/* Etkinlik Takvimi Bölümü */}
+        <EtkinlikTakvimi />
+      </main>
+      
+      {/* Alt Bilgi Alanı */}
+      <Footer />
     </div>
   );
 };
