@@ -75,17 +75,17 @@ export const Footer = () => {
           
           {/* Logo ve Açıklama */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-6 bg-black/90 px-4 py-3 rounded-lg transition-all duration-500 hover:bg-black w-fit">
               <img 
                 src="/src/assets/havacilik-uzay-logo.png" 
                 alt="İSTÜN Havacılık ve Uzay Kulübü Logo" 
                 className="h-12 w-auto hover-yüksel"
               />
               <div>
-                <h3 className="text-lg font-bold text-primary">
+                <h3 className="text-lg font-bold text-white">
                   Havacılık & Uzay
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-300">
                   İSTÜN Kulübü
                 </p>
               </div>
@@ -177,7 +177,7 @@ export const Footer = () => {
               onClick={() => sayfayaGit("#iletisim")}
             >
               <ExternalLink className="mr-2 h-4 w-4" />
-              Üye Olmak İstiyorum
+              İletişim
             </Button>
             
             {/* Kulüp İstatistikleri */}
@@ -203,14 +203,14 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             
             {/* Üniversite Logosu */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 bg-black/90 px-4 py-3 rounded-lg transition-all duration-500 hover:bg-black">
               <img 
                 src="/src/assets/istun-logo.png" 
                 alt="İSTÜN - İstanbul Sağlık ve Teknoloji Üniversitesi Logo" 
                 className="h-16 w-auto hover-yüksel"
               />
-              <div className="text-sm text-muted-foreground">
-                <p className="font-medium">İstanbul Sağlık ve Teknoloji Üniversitesi</p>
+              <div className="text-sm text-gray-300">
+                <p className="font-medium text-white">İstanbul Sağlık ve Teknoloji Üniversitesi</p>
                 <p>Havacılık ve Uzay Kulübü</p>
               </div>
             </div>

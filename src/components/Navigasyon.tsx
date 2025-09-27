@@ -40,17 +40,17 @@ export const Navigasyon = ({ className }: NavigasyonProps) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo Alanı */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 bg-black/90 px-4 py-2 rounded-lg transition-all duration-500 hover:bg-black">
             <img 
               src="/src/assets/havacilik-uzay-logo.png" 
               alt="İSTÜN Havacılık ve Uzay Kulübü Logo" 
               className="h-10 w-auto havacılık-uçuş"
             />
             <div className="hidden md:block">
-              <h1 className="text-lg font-bold text-primary">
+              <h1 className="text-lg font-bold text-white">
                 Havacılık & Uzay Kulübü
               </h1>
-              <p className="text-xs text-muted-foreground">İSTÜN</p>
+              <p className="text-xs text-gray-300">İSTÜN</p>
             </div>
           </div>
 
@@ -66,12 +66,6 @@ export const Navigasyon = ({ className }: NavigasyonProps) => {
                 {oge.ad}
               </Button>
             ))}
-            <Button 
-              variant="default"
-              className="ml-4 hover-parlak bg-gradient-to-r from-primary to-primary-glow"
-            >
-              Üye Ol
-            </Button>
           </div>
 
           {/* Mobil Menü Butonu */}
@@ -99,12 +93,6 @@ export const Navigasyon = ({ className }: NavigasyonProps) => {
                   {oge.ad}
                 </Button>
               ))}
-              <Button 
-                variant="default"
-                className="w-full mt-4 bg-gradient-to-r from-primary to-primary-glow"
-              >
-                Üye Ol
-              </Button>
             </div>
           </div>
         )}

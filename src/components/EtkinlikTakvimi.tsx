@@ -2,88 +2,15 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Clock, MapPin, Users, Plus } from "lucide-react";
+import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { etkinlikListesi, type Etkinlik } from "@/data/etkinlikler";
 
-// Etkinlik veri tipi
-interface Etkinlik {
-  id: number;
-  baslik: string;
-  aciklama: string;
-  tarih: string;
-  saat: string;
-  konum: string;
-  kategori: "workshop" | "yarışma" | "seminer" | "gezi" | "toplanti";
-  katilimciSayisi: number;
-  maxKatilimci: number;
-  durum: "yaklaşan" | "devam-ediyor" | "tamamlandi";
-}
 
 // Etkinlik takvimi bileşeni - Kulüp etkinliklerini yönetme
 export const EtkinlikTakvimi = () => {
-  // Örnek etkinlik verileri
-  const [etkinlikler, setEtkinlikler] = useState<Etkinlik[]>([
-    {
-      id: 1,
-      baslik: "Roket Tasarım Workshop'u",
-      aciklama: "Model roket tasarımı ve yapım atölyesi. Temel roket mühendisliği prensipleri öğrenilecek.",
-      tarih: "2024-03-15",
-      saat: "14:00",
-      konum: "Mühendislik Fakültesi Lab 205",
-      kategori: "workshop",
-      katilimciSayisi: 24,
-      maxKatilimci: 30,
-      durum: "yaklaşan"
-    },
-    {
-      id: 2,
-      baslik: "Drone Yarışması",
-      aciklama: "Öğrenci yapımı drone'lar ile hız ve çeviklik yarışması.",
-      tarih: "2024-03-20",
-      saat: "10:00",
-      konum: "Kampüs Açık Alanı",
-      kategori: "yarışma",
-      katilimciSayisi: 18,
-      maxKatilimci: 20,
-      durum: "yaklaşan"
-    },
-    {
-      id: 3,
-      baslik: "Havacılık Sektörü Semineri",
-      aciklama: "Sektör profesyonelleri ile havacılık endüstrisindeki fırsatlar hakkında söyleşi.",
-      tarih: "2024-03-25",
-      saat: "19:00",
-      konum: "Konferans Salonu",
-      kategori: "seminer",
-      katilimciSayisi: 85,
-      maxKatilimci: 100,
-      durum: "yaklaşan"
-    },
-    {
-      id: 4,
-      baslik: "Uzay Merkezi Gezisi",
-      aciklama: "TÜBİTAK Uzay Teknolojileri Araştırma Enstitüsü teknik gezisi.",
-      tarih: "2024-04-01",
-      saat: "09:00",
-      konum: "TÜBİTAK UZAY - Ankara",
-      kategori: "gezi",
-      katilimciSayisi: 35,
-      maxKatilimci: 40,
-      durum: "yaklaşan"
-    },
-    {
-      id: 5,
-      baslik: "Aylık Genel Toplantı",
-      aciklama: "Kulüp çalışmaları değerlendirmesi ve yeni proje planlaması.",
-      tarih: "2024-03-28",
-      saat: "18:00",
-      konum: "Kulüp Odası",
-      kategori: "toplanti",
-      katilimciSayisi: 42,
-      maxKatilimci: 50,
-      durum: "yaklaşan"
-    }
-  ]);
+  // Etkinlik verileri - data/etkinlikler.ts dosyasından geliyor
+  const [etkinlikler, setEtkinlikler] = useState<Etkinlik[]>(etkinlikListesi);
 
   const [seciliKategori, setSeciliKategori] = useState<string>("tümü");
 
@@ -121,11 +48,6 @@ export const EtkinlikTakvimi = () => {
     );
   };
 
-  // Yeni etkinlik ekleme işlevi (örnek)
-  const yeniEtkinlikEkle = () => {
-    // Bu fonksiyon modal veya form açabilir
-    console.log("Yeni etkinlik ekleme formu açılacak...");
-  };
 
   // Tarih formatı düzenleme
   const tarihFormatlı = (tarih: string) => {
@@ -152,14 +74,6 @@ export const EtkinlikTakvimi = () => {
             Öğrenin, deneyimleyin ve geleceği şekillendirin.
           </p>
           
-          {/* Yeni Etkinlik Ekleme Butonu */}
-          <Button 
-            onClick={yeniEtkinlikEkle}
-            className="mb-8 hover-parlak bg-gradient-to-r from-primary to-primary-glow"
-          >
-            <Plus className="mr-2 h-4 w-4" />
-            Yeni Etkinlik Ekle
-          </Button>
         </div>
 
         {/* Kategori Filtreleri */}
