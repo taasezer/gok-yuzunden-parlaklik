@@ -129,7 +129,7 @@ export const HeroSection = () => {
           {/* İstatistikler */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">150+</div>
+              <div className="text-3xl font-bold text-primary">450+</div>
               <div className="text-sm text-muted-foreground">Aktif Üye</div>
             </div>
             <div className="text-center">
