@@ -4,14 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { etkinlikListesi, type Etkinlik } from "@/data/etkinlikler";
+import { etkinlikListesi } from "@/data/etkinlikler";
 
 
 // Etkinlik takvimi bileşeni - Kulüp etkinliklerini yönetme
 export const EtkinlikTakvimi = () => {
-  // Etkinlik verileri - data/etkinlikler.ts dosyasından geliyor
-  const [etkinlikler, setEtkinlikler] = useState<Etkinlik[]>(etkinlikListesi);
-
   const [seciliKategori, setSeciliKategori] = useState<string>("tümü");
 
   // Kategori renk eşleştirmesi
@@ -34,19 +31,8 @@ export const EtkinlikTakvimi = () => {
 
   // Etkinlik filtreleme işlevi
   const filtrelenmisEtkinlikler = seciliKategori === "tümü" 
-    ? etkinlikler 
-    : etkinlikler.filter(etkinlik => etkinlik.kategori === seciliKategori);
-
-  // Etkinliğe katılma işlevi
-  const etkinligeKatil = (etkinlikId: number) => {
-    setEtkinlikler(prevEtkinlikler =>
-      prevEtkinlikler.map(etkinlik =>
-        etkinlik.id === etkinlikId && etkinlik.katilimciSayisi < etkinlik.maxKatilimci
-          ? { ...etkinlik, katilimciSayisi: etkinlik.katilimciSayisi + 1 }
-          : etkinlik
-      )
-    );
-  };
+    ? etkinlikListesi 
+    : etkinlikListesi.filter(etkinlik => etkinlik.kategori === seciliKategori);
 
 
   // Tarih formatı düzenleme
@@ -155,18 +141,6 @@ export const EtkinlikTakvimi = () => {
                     />
                   </div>
                 </div>
-
-                {/* Katılım Butonu */}
-                <Button 
-                  className="w-full hover-parlak"
-                  disabled={etkinlik.katilimciSayisi >= etkinlik.maxKatilimci}
-                  onClick={() => etkinligeKatil(etkinlik.id)}
-                >
-                  {etkinlik.katilimciSayisi >= etkinlik.maxKatilimci 
-                    ? "Kontenjan Dolu" 
-                    : "Katıl"
-                  }
-                </Button>
               </CardContent>
             </Card>
           ))}
