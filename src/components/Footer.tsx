@@ -63,7 +63,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         
         {/* Ana Footer İçeriği */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           
           {/* Logo ve Açıklama */}
           <div className="lg:col-span-1">
@@ -155,39 +155,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter veya Ek Bilgiler */}
-          <div>
-            <h4 className="text-lg font-semibold text-primary mb-6">
-              Bize Katılın
-            </h4>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Havacılık ve uzay teknolojileri dünyasının heyecan verici 
-              gelişmelerinden haberdar olmak için bize katılın.
-            </p>
-            <Button 
-              className="w-full hover-parlak bg-gradient-to-r from-primary to-primary-glow"
-              onClick={() => sayfayaGit("#iletisim")}
-            >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              İletişim
-            </Button>
-            
-            {/* Kulüp İstatistikleri */}
-            <Card className="mt-6 bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20">
-              <CardContent className="p-4">
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-primary">150+</div>
-                    <div className="text-xs text-muted-foreground">Üye</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">25+</div>
-                    <div className="text-xs text-muted-foreground">Proje</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
 
         {/* Üniversite Logosu ve Alt Bilgiler */}
@@ -219,17 +186,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Ek Bilgi Bandı */}
-        <div className="mt-8 text-center">
-          <Card className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 border border-primary/20">
-            <CardContent className="py-4 px-6">
-              <p className="text-sm text-muted-foreground">
-                🚀 <strong>Hayallerinizi gerçeğe dönüştürün!</strong> 
-                Havacılık ve uzay teknolojilerinde kariyer yapmak istiyorsanız doğru yerdesiniz.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </footer>
   );
