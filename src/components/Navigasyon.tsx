@@ -17,7 +17,6 @@ export const Navigasyon = ({ className }: NavigasyonProps) => {
     { ad: "Hakkımızda", href: "#hakkimizda" },
     { ad: "Etkinlikler", href: "#etkinlikler" },
     { ad: "Projeler", href: "#projeler" },
-    { ad: "Üyeler", href: "#uyeler" },
     { ad: "İletişim", href: "#iletisim" },
   ];
 
