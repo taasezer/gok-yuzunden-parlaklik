@@ -32,9 +32,7 @@ export const Footer = () => {
 
   // Sosyal medya linkleri
   const sosyalMedyaLinkleri = [
-    { ikon: Instagram, ad: "Instagram", link: "https://www.instagram.com/istunhavacilikveuzaykulubu?igsh=MWJ2MWJoYzQzbm1yNw==" },
-    { ikon: Twitter, ad: "Twitter", link: "#" },
-    { ikon: Youtube, ad: "YouTube", link: "#" }
+    { ikon: Instagram, ad: "Instagram", link: "https://www.instagram.com/istunhavacilikveuzaykulubu?igsh=MWJ2MWJoYzQzbm1yNw==" }
   ];
 
   // Hızlı linkler
