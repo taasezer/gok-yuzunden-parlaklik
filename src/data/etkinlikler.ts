@@ -43,7 +43,18 @@ export const etkinlikListesi: Etkinlik[] = [
   // ============================================
   // ETKİNLİKLERİNİZİ AŞAĞIYA EKLEYİN:
   // ============================================
-
+  {
+    id: 1,                                    // Benzersiz numara (1, 2, 3...)
+    baslik: "Tanışma Partisi",              // Etkinlik adı
+    aciklama: "Havacılık Ve Uzay Klübü Olarak Tanışıyoruz!!",      // Kısa açıklama
+    tarih: "2025-01-15",                     // Tarih formatı: YYYY-MM-DD
+    saat: "14:00",                           // Saat formatı: SS:DD
+    konum: "Taksim",                  // Konum bilgisi
+    kategori: "seminer",                    // workshop | yarışma | seminer | gezi | toplanti
+    katilimciSayisi: 40,                      // Şu anki katılımcı sayısı
+    maxKatilimci: 70,                        // Maksimum katılımcı sayısı
+    durum: "yaklaşan"                        // yaklaşan | devam-ediyor | tamamlandi
+  },
 
 ];
 
