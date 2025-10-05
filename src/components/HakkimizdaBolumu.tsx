@@ -54,7 +54,7 @@ export const HakkimizdaBolumu = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            İSTÜN Havacılık ve Uzay Kulübü olarak, 2019 yılından beri havacılık ve uzay 
+            İSTÜN Havacılık ve Uzay Kulübü olarak, 2021 yılından beri havacılık ve uzay 
             teknolojileri alanında öğrencilerimizin gelişimine katkıda bulunuyoruz. 
             Bilimsel çalışmalar, projeler ve etkinlikler ile geleceğin havacılık uzmanlarını yetiştiriyoruz.
           </p>
@@ -139,10 +139,10 @@ export const HakkimizdaBolumu = () => {
               Başarı Hikayelerimiz
             </h3>
             <p className="text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-              2019'dan bu yana düzenlediğimiz onlarca etkinlik, geliştirdiğimiz projeler ve 
+              2021'dan bu yana düzenlediğimiz onlarca etkinlik, geliştirdiğimiz projeler ve 
               kazandığımız ödüllerle havacılık alanında kendimizi kanıtladık. Üyelerimiz sektörün 
               önde gelen şirketlerinde çalışmaya başladı ve bazıları kendi start-up'larını kurdu. 
-              TÜBİTAK, TEKNOFEST ve uluslararası yarışmalarda elde ettiğimiz başarılarla 
+              TÜBİTAK ve TEKNOFEST yarışmalarında elde ettiğimiz başarılarla 
               üniversitemizin ve ülkemizin adını gururla duyuruyoruz.
             </p>
             <div className="mt-8 flex justify-center">
