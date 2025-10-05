@@ -10,6 +10,8 @@ import {
   Youtube,
   ExternalLink
 } from "lucide-react";
+import havacilikLogo from "@/assets/havacilik-uzay-logo.png";
+import istunLogo from "@/assets/istun-logo.png";
 
 // Footer bileşeni - Site alt bilgi alanı
 export const Footer = () => {
@@ -67,7 +69,7 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6 bg-black/90 px-4 py-3 rounded-lg transition-all duration-500 hover:bg-black w-fit">
               <img 
-                src="/src/assets/havacilik-uzay-logo.png" 
+                src={havacilikLogo} 
                 alt="İSTÜN Havacılık ve Uzay Kulübü Logo" 
                 className="h-12 w-auto hover-yüksel"
               />
@@ -162,7 +164,7 @@ export const Footer = () => {
             {/* Üniversite Logosu */}
             <div className="flex items-center space-x-4 bg-black/90 px-4 py-3 rounded-lg transition-all duration-500 hover:bg-black">
               <img 
-                src="/src/assets/istun-logo.png" 
+                src={istunLogo} 
                 alt="İSTÜN - İstanbul Sağlık ve Teknoloji Üniversitesi Logo" 
                 className="h-16 w-auto hover-yüksel"
               />
