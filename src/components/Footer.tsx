@@ -19,28 +19,21 @@ export const Footer = () => {
     {
       ikon: Mail,
       baslik: "E-posta",
-      bilgi: "havacilik@istun.edu.tr",
-      link: "mailto:havacilik@istun.edu.tr"
-    },
-    {
-      ikon: Phone,
-      baslik: "Telefon",
-      bilgi: "+90 (212) 999 99 99",
-      link: "tel:+902129999999"
+      bilgi: "huk.klb@istun.edu.tr",
+      link: "mailto:huk.klb@istun.edu.tr"
     },
     {
       ikon: MapPin,
       baslik: "Adres",
       bilgi: "İSTÜN Kampüsü, İstanbul",
-      link: "https://maps.google.com"
+      link: "https://www.google.com/maps/place/%C4%B0stanbul+Sa%C4%9Fl%C4%B1k+ve+Teknoloji+%C3%9Cniversitesi/@41.0562536,28.9484985,743m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14cabba389541ebd:0x77aa0f2806492df6!8m2!3d41.0562536!4d28.9510734!16s%2Fg%2F11fvt362ms!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
     }
   ];
 
   // Sosyal medya linkleri
   const sosyalMedyaLinkleri = [
-    { ikon: Instagram, ad: "Instagram", link: "#" },
+    { ikon: Instagram, ad: "Instagram", link: "https://www.instagram.com/istunhavacilikveuzaykulubu?igsh=MWJ2MWJoYzQzbm1yNw==" },
     { ikon: Twitter, ad: "Twitter", link: "#" },
-    { ikon: Linkedin, ad: "LinkedIn", link: "#" },
     { ikon: Youtube, ad: "YouTube", link: "#" }
   ];
 
@@ -50,7 +43,6 @@ export const Footer = () => {
     { ad: "Hakkımızda", link: "#hakkimizda" },
     { ad: "Etkinlikler", link: "#etkinlikler" },
     { ad: "Projeler", link: "#projeler" },
-    { ad: "Üyeler", link: "#uyeler" },
     { ad: "İletişim", link: "#iletisim" }
   ];
 
