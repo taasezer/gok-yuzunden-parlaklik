@@ -17,66 +17,34 @@ export interface Etkinlik {
 
 // Etkinlik listesi - Bu array'i düzenleyerek etkinlik ekleyip çıkarabilirsiniz
 export const etkinlikListesi: Etkinlik[] = [
-  // ÇALIŞAN ÖRNEK ETKİNLİKLER - Bu örnekleri düzenleyerek kendi etkinliklerinizi oluşturun
-  {
-    id: 1,
-    baslik: "Drone Yapım Workshop'u",
-    aciklama: "Kendi drone'unuzu sıfırdan tasarlayın ve yapın. Havacılık mühendisliği prensiplerini öğrenin.",
-    tarih: "2024-12-15", 
-    saat: "14:00",
-    konum: "Teknoloji Laboratuvarı",
-    kategori: "workshop",
-    katilimciSayisi: 8,
-    maxKatilimci: 20,
-    durum: "yaklaşan"
-  },
-  {
-    id: 2,
-    baslik: "Model Roket Yarışması",
-    aciklama: "Kendi tasarladığınız model roketlerle yükseklik yarışması. Ödüller kazanın!",
-    tarih: "2024-12-22",
-    saat: "10:00", 
-    konum: "Okul Bahçesi",
-    kategori: "yarışma",
-    katilimciSayisi: 15,
-    maxKatilimci: 30,
-    durum: "yaklaşan"
-  },
-  {
-    id: 3,
-    baslik: "Uzay Teknolojileri Semineri",
-    aciklama: "NASA mühendisi ile uzay teknolojilerinin geleceği hakkında özel seminer.",
-    tarih: "2025-01-10",
-    saat: "13:30",
-    konum: "Konferans Salonu",
-    kategori: "seminer", 
-    katilimciSayisi: 25,
-    maxKatilimci: 50,
-    durum: "yaklaşan"
-  }
-
-  // YENİ ETKİNLİK EKLEMEK İÇİN:
-  // 1. Yukarıdaki örneklerden birini kopyalayın
-  // 2. id numarasını benzersiz yapın (4, 5, 6...)
-  // 3. Bilgileri kendi etkinliğinize göre değiştirin
-  // 4. tarih formatı: "YYYY-MM-DD" (örn: "2024-12-25")
-  // 5. kategori seçenekleri: "workshop", "yarışma", "seminer", "gezi", "toplanti"
-  // 6. durum seçenekleri: "yaklaşan", "devam-ediyor", "tamamlandi"
-  // 7. Son etkinlikten sonra virgül koymayı unutmayın (son etkinlik hariç)
-  
-  // ÖRNEK YENİ ETKİNLİK:
+  // ============================================
+  // ETKİNLİK EKLEME ŞABLONU
+  // ============================================
+  // Aşağıdaki şablonu kopyalayıp düzenleyerek yeni etkinlik ekleyin
+  //
   // {
-  //   id: 4,
-  //   baslik: "Yeni Etkinlik Adı",
-  //   aciklama: "Etkinlik açıklaması...",
-  //   tarih: "2024-12-30",
-  //   saat: "15:00",
-  //   konum: "Etkinlik Yeri",
-  //   kategori: "workshop",
-  //   katilimciSayisi: 0,
-  //   maxKatilimci: 25,
-  //   durum: "yaklaşan"
-  // }
+  //   id: 1,                                    // Benzersiz numara (1, 2, 3...)
+  //   baslik: "Etkinlik Başlığı",              // Etkinlik adı
+  //   aciklama: "Etkinlik açıklaması...",      // Kısa açıklama
+  //   tarih: "2025-01-15",                     // Tarih formatı: YYYY-MM-DD
+  //   saat: "14:00",                           // Saat formatı: SS:DD
+  //   konum: "Etkinlik Yeri",                  // Konum bilgisi
+  //   kategori: "workshop",                    // workshop | yarışma | seminer | gezi | toplanti
+  //   katilimciSayisi: 0,                      // Şu anki katılımcı sayısı
+  //   maxKatilimci: 30,                        // Maksimum katılımcı sayısı
+  //   durum: "yaklaşan"                        // yaklaşan | devam-ediyor | tamamlandi
+  // },
+  //
+  // DİKKAT: 
+  // - Her etkinlikten sonra virgül (,) koymayı unutmayın (son etkinlik hariç)
+  // - id numaralarını benzersiz yapın
+  // - kategori ve durum değerlerini yukarıda belirtilen seçeneklerden seçin
+  //
+  // ============================================
+  // ETKİNLİKLERİNİZİ AŞAĞIYA EKLEYİN:
+  // ============================================
+
+
 ];
 
 

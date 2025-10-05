@@ -41,15 +41,6 @@ export const HakkimizdaBolumu = () => {
     "3D Tasarım ve Üretim"
   ];
 
-  // Kulüp istatistikleri
-  const istatistikler = [
-    { sayi: "150+", aciklama: "Aktif Üye" },
-    { sayi: "25+", aciklama: "Tamamlanan Proje" },
-    { sayi: "50+", aciklama: "Düzenlenen Etkinlik" },
-    { sayi: "10+", aciklama: "Kazanılan Ödül" },
-    { sayi: "5", aciklama: "Yıllık Deneyim" },
-    { sayi: "15+", aciklama: "Sektör Ortaklığı" }
-  ];
 
   return (
     <section id="hakkimizda" className="py-20 bg-gradient-to-b from-accent/5 to-background">
@@ -139,22 +130,6 @@ export const HakkimizdaBolumu = () => {
           </div>
         </div>
 
-        {/* İstatistikler */}
-        <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-3xl p-8 mb-16">
-          <h3 className="text-3xl font-bold text-center mb-12 text-primary">Rakamlarla Biz</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {istatistikler.map((istatistik, index) => (
-              <div key={index} className="text-center animate-fade-in">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 yıldız-parıltı">
-                  {istatistik.sayi}
-                </div>
-                <div className="text-sm text-muted-foreground font-medium">
-                  {istatistik.aciklama}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Başarı Hikayeleri */}
         <Card className="hover-yüksel bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
