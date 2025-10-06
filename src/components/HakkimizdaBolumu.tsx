@@ -131,23 +131,24 @@ export const HakkimizdaBolumu = () => {
         </div>
 
 
-        {/* Başarı Hikayeleri */}
+        {/* Geleceğe Bakış */}
         <Card className="hover-yüksel bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
           <CardContent className="p-8 text-center">
             <h3 className="text-3xl font-bold mb-6 text-primary flex items-center justify-center">
               <Award className="mr-3 h-8 w-8" />
-              Başarı Hikayelerimiz
+              Başarı Vizyonumuz
             </h3>
             <p className="text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-              2021'dan bu yana düzenlediğimiz onlarca etkinlik, geliştirdiğimiz projeler ve 
-              kazandığımız ödüllerle havacılık alanında kendimizi kanıtladık. Üyelerimiz sektörün 
-              önde gelen şirketlerinde çalışmaya başladı ve bazıları kendi start-up'larını kurdu. 
-              TÜBİTAK ve TEKNOFEST yarışmalarında elde ettiğimiz başarılarla 
-              üniversitemizin ve ülkemizin adını gururla duyuruyoruz.
+              Havacılık ve uzay teknolojilerinde öncü bir kulüp olarak, geleceğin mühendislerini 
+              yetiştirmeyi ve yenilikçi projeler geliştirmeyi hedefliyoruz. Ulusal ve uluslararası 
+              yarışmalarda ülkemizi temsil etmek, sektörün gelişimine katkı sağlamak ve 
+              üyelerimizi global rekabette öne çıkaracak donanımla mezun etmek en büyük 
+              hedeflerimiz arasında. Teknoloji ve bilimin sınırlarını zorlayarak, 
+              Türkiye'nin uzay ve havacılık alanındaki gücünü artırmayı amaçlıyoruz.
             </p>
             <div className="mt-8 flex justify-center">
               <Badge className="bg-gradient-to-r from-primary to-primary-glow text-white px-6 py-2">
-                Türkiye'nin En Başarılı Havacılık Kulüplerinden
+                Geleceğin Havacılık Liderlerini Yetiştiriyoruz
               </Badge>
             </div>
           </CardContent>
