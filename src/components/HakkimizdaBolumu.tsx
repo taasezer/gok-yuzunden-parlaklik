@@ -67,7 +67,7 @@ export const HakkimizdaBolumu = () => {
               <div>
                 <h3 className="text-3xl font-bold text-primary mb-4 flex items-center">
                   <Rocket className="mr-3 h-8 w-8" />
-                  Kim Biz?
+                  Biz Kimiz?
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   İstanbul Sağlık ve Teknoloji Üniversitesi bünyesinde faaliyet gösteren 
