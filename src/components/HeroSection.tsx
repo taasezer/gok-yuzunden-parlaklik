@@ -48,17 +48,8 @@ export const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto">
           
-          {/* Ana Logo */}
-          <div className="mb-8 roket-fırlatma">
-            <img 
-              src="/src/assets/havacilik-uzay-logo.png" 
-              alt="İSTÜN Havacılık ve Uzay Kulübü Logo" 
-              className="h-32 w-auto mx-auto mb-6 hover-yüksel"
-            />
-          </div>
-
           {/* Ana Başlık */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             <span className="bg-gradient-to-r from-primary via-primary-glow to-primary bg-clip-text text-transparent">

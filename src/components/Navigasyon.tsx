@@ -44,7 +44,7 @@ export const Navigasyon = ({ className }: NavigasyonProps) => {
             <img 
               src={havacilikLogo} 
               alt="İSTÜN Havacılık ve Uzay Kulübü Logo" 
-              className="h-10 w-auto havacılık-uçuş"
+              className="h-10 w-auto"
             />
             <div className="hidden md:block">
               <h1 className="text-lg font-bold text-white">
