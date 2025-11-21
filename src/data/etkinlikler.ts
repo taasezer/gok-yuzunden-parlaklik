@@ -26,7 +26,7 @@ export const etkinlikListesi: Etkinlik[] = [
      saat: "11:00",                           // Saat formatı: SS:DD
      konum: "İstanbul Üniversitesi",                  // Konum bilgisi
      kategori: "gezi",                    // workshop | yarışma | seminer | gezi | toplanti
-     katilimciSayisi: 0,                      // Şu anki katılımcı sayısı
+     katilimciSayisi: 27,                      // Şu anki katılımcı sayısı
      maxKatilimci: 30,                        // Maksimum katılımcı sayısı
      durum: "devam-ediyor"                        // yaklaşan | devam-ediyor | tamamlandi
    },
