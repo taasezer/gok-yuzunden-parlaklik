@@ -17,6 +17,19 @@ export interface Etkinlik {
 
 // Etkinlik listesi - Bu array'i düzenleyerek etkinlik ekleyip çıkarabilirsiniz
 export const etkinlikListesi: Etkinlik[] = [
+  
+   {
+     id: 1,                                    // Benzersiz numara (1, 2, 3...)
+     baslik: "Rasathane Gezisi",              // Etkinlik adı
+     aciklama: "İstanbul Üniversitesi Gözlem Evi",      // Kısa açıklama
+     tarih: "2025-12-05",                     // Tarih formatı: YYYY-MM-DD
+     saat: "11:00",                           // Saat formatı: SS:DD
+     konum: "İstanbul Üniversitesi",                  // Konum bilgisi
+     kategori: "gezi",                    // workshop | yarışma | seminer | gezi | toplanti
+     katilimciSayisi: 0,                      // Şu anki katılımcı sayısı
+     maxKatilimci: 30,                        // Maksimum katılımcı sayısı
+     durum: "devam-ediyor"                        // yaklaşan | devam-ediyor | tamamlandi
+   },
   // ============================================
   // ETKİNLİK EKLEME ŞABLONU
   // ============================================
